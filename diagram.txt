@@ -1,0 +1,26 @@
+   Flask
+     |
+  Services -> Unit Of Work
+     |             |
+   Domain  <-   Adapters
+                   |
+                Repository
+                   |
+                   DB
+
+
+
+
+Adapter (fastapi)
+      |
+      v
+  Service Layer
+      |
+      v
+    Domain
+      ^
+      |
+   Adapter (sqlalchemy)
+      |
+      v
+   Database
